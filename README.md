@@ -1,6 +1,37 @@
 # Test-Connection
 
 ```bash
+Test-NetConnection -ComputerName "apse1-identity.sentinelone.net" -Port 443
+
+
+Test-NetConnection -ComputerName "TCB-AD-01" -Port 53
+Test-NetConnection -ComputerName "TCB-AD-01" -Port 88
+Test-NetConnection -ComputerName "TCB-AD-01" -Port 389
+Test-NetConnection -ComputerName "TCB-AD-01" -Port 636
+Test-NetConnection -ComputerName "TCB-AD-01" -Port 445
+Test-NetConnection -ComputerName "TCB-AD-01" -Port 5985
+Test-NetConnection -ComputerName "TCB-AD-01" -Port 5986
+
+
+
+Test-NetConnection -ComputerName "TCB-AD-06" -Port 53
+Test-NetConnection -ComputerName "TCB-AD-06" -Port 88
+Test-NetConnection -ComputerName "TCB-AD-06" -Port 389
+Test-NetConnection -ComputerName "TCB-AD-06" -Port 636
+Test-NetConnection -ComputerName "TCB-AD-06" -Port 445
+Test-NetConnection -ComputerName "TCB-AD-06" -Port 5985
+Test-NetConnection -ComputerName "TCB-AD-06" -Port 5986
+
+
+Test-NetConnection -ComputerName "DC-AD-NC-HEAD01" -Port 53
+Test-NetConnection -ComputerName "DC-AD-NC-HEAD01" -Port 88
+Test-NetConnection -ComputerName "DC-AD-NC-HEAD01" -Port 389
+Test-NetConnection -ComputerName "DC-AD-NC-HEAD01" -Port 636
+Test-NetConnection -ComputerName "DC-AD-NC-HEAD01" -Port 445
+Test-NetConnection -ComputerName "DC-AD-NC-HEAD01" -Port 5985
+Test-NetConnection -ComputerName "DC-AD-NC-HEAD01" -Port 5986
+
+
 Test-NetConnection -ComputerName "DC-AD-NC-HEAD02" -Port 53
 Test-NetConnection -ComputerName "DC-AD-NC-HEAD02" -Port 88
 Test-NetConnection -ComputerName "DC-AD-NC-HEAD02" -Port 389
